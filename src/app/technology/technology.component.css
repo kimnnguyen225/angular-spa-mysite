@@ -1,9 +1,33 @@
-div {
+/*div {
 	display: inline-block;
 	vertical-align: text-top;
-}
+}*/
 div#technology {
-	min-width: 25%;
-	background-color: #f8f8f8;
 	color: black;
+	font-size: 14pt;
+	padding: 0 10%;
+	margin: 3% auto;
+}
+
+
+.springy-text {
+  color: darkslateblue;
+  animation-name: springy-text;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-fill-mode: backwards;
+}
+@keyframes springy-text {
+  0%   {
+    letter-spacing: 1.2em;
+    color: thistle;
+  }
+  100%   {
+    letter-spacing: 0.1em;
+    color: darkslateblue;
+  }
 }
