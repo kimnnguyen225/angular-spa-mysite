@@ -1,0 +1,19 @@
+<div>
+    <table class='table table-striped'>
+        <tr>
+              <th>Order</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Comment</th>
+              <th>Skill Level</th>
+        </tr>
+        <tr *ngFor="let technology of technologies">
+            <td>{{technology.order}}</td>
+            <td>{{technology.name}}</td>
+            <td>{{technology.desc}}</td>
+            <td>{{technology.comment}}</td>
+            <td>{{technology.skill}}</td>
+        </tr>
+        <tbody></tbody>
+    </table>
+</div>
