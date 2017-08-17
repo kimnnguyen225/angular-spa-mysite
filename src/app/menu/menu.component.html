@@ -1,1 +1,14 @@
-<h3>MenuComponent</h3>
+<nav>
+  <ul>
+    <!-- inside tag need to inclue *ngFor="", inside "", needs to declare variable -->
+    <li *ngFor="let menu of menus"
+        title="{{menu.tooltip}}"
+        [ngStyle]="{'display': menu.visible ? 'inline' : 'none'}">
+        <!-- if (display menu == visible){set menu = inline block;} else {set menu = none;} -->
+      <!-- use visible property and boolean, then use [hidden] to hide link from users -->
+      <a routerLink='{{menu.navigateTo}}'>{{menu.display}}</a>
+      <!-- [hidden]="visible==true"
+          [hidden]="!visible" -->
+    </li>
+  </ul>
+</nav>
